@@ -1,0 +1,13 @@
+app/.vs
+job/.vs
+app/job/bin
+app/job/obj
+app/app/bin
+app/app/obj
+simple/job/bin
+simple/job/obj
+simple/simple/bin
+simple/simple/obj
+simple/webjob/obj
+simple/webjob/obj
+simple/packages
