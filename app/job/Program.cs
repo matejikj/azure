@@ -14,7 +14,7 @@ public class Program
 		var host = Host.CreateDefaultBuilder()
 			.ConfigureAppConfiguration(app =>
 			{
-				app.AddJsonFile("appsettings.json");
+				//app.AddJsonFile("appsettings.json");
 				app.AddEnvironmentVariables();
 			})
 			.ConfigureServices(services =>
@@ -56,6 +56,7 @@ public class Worker : IHostedService, IDisposable
 	{
 		Console.WriteLine("Checking for new e-mails to be sent...");
 
+		configuration.ToString();
 		using var conn = new SqlConnection(configuration.GetConnectionString("MyDatabase"));
 		await conn.OpenAsync(stoppingToken);
 
