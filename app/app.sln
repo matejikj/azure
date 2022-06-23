@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "app\app.csproj", "{D3ED23A8-5273-46E2-AA20-7EF0D858B162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "app", "app\app.csproj", "{D3ED23A8-5273-46E2-AA20-7EF0D858B162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "job", "job\job.csproj", "{1C329739-FCD2-4250-86F5-0CFC3BA07838}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "job", "job\job.csproj", "{1C329739-FCD2-4250-86F5-0CFC3BA07838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cosmos", "cosmos\cosmos.csproj", "{FF68E5DF-E227-4848-AA6A-763E9BE23A68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1C329739-FCD2-4250-86F5-0CFC3BA07838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C329739-FCD2-4250-86F5-0CFC3BA07838}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C329739-FCD2-4250-86F5-0CFC3BA07838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF68E5DF-E227-4848-AA6A-763E9BE23A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF68E5DF-E227-4848-AA6A-763E9BE23A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF68E5DF-E227-4848-AA6A-763E9BE23A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF68E5DF-E227-4848-AA6A-763E9BE23A68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
