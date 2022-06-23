@@ -4,10 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationInsightsResourceId>/subscriptions/4057624b-c723-463b-933a-ac02c9e2087a/resourceGroups/matejikj_group/providers/microsoft.insights/components/matejikinsights</ApplicationInsightsResourceId>
+    <UserSecretsId>e405c526-2194-49f2-abc4-852d790206fc</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.11.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
   </ItemGroup>
 
 </Project>
