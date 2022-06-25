@@ -11,6 +11,7 @@ namespace app.Pages
 		// TODO: Hodnoty by bylo správné dát do konfigurace. Pro přehlednost a mít vše na jednom místě za účelem studia, nechávám tuto zjednodušenou variantu.
 		private const string AzureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=storagematejik;AccountKey=NprqIlhv+oZnA2aZv8cdwIqJSD8O8xTt6isF7j//4FAK7qZqPoZbP7pZ4MIK/LumtDTOmFtLB1a/ClI4+rc36A==;EndpointSuffix=core.windows.net";
 		private const string AzureStorageContainerName = "matejikcontainer";
+		private const string AzureStorageName = "storagematejik";
 		private readonly ILogger<IndexModel> _logger;
 
 		public IndexModel(ILogger<IndexModel> logger)
@@ -35,7 +36,10 @@ namespace app.Pages
 
 		private BlobContainerClient CreateClient()
 		{
-			return new Azure.Storage.Blobs.BlobContainerClient(AzureStorageConnectionString, AzureStorageContainerName);
+			//return new Azure.Storage.Blobs.BlobContainerClient(AzureStorageConnectionString, AzureStorageContainerName);
+			string containerEndpoint = $"https://{AzureStorageName}.blob.core.windows.net/{AzureStorageContainerName}";
+			return new BlobContainerClient(new Uri(containerEndpoint), new Azure.Identity.DefaultAzureCredential());
+
 		}
 	}
 }
